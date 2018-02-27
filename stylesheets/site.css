@@ -1413,6 +1413,8 @@ svg rect {
   display: block; }
 
 @media (max-width: 720px) {
+  .view__about .btn {
+    margin-left: 10px; }
   .view__about .icon-flower-2 {
     display: none; }
   .view__about .icon-clouds-2 {
@@ -1450,6 +1452,8 @@ svg rect {
 
   .view__about {
     padding: 176px 40px 18px; }
+    .view__about .btn {
+      margin-left: 10px; }
     .view__about .relative {
       margin-bottom: 480px; }
     .view__about .text-block {
