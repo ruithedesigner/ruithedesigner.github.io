@@ -842,8 +842,9 @@ a {
 .btn {
   font-size: .9rem;
   border: 1px solid #383F26;
-  padding: 4px 16px;
+  padding: 4px 14px;
   margin: 8px 0;
+  margin-left: 10px;
   line-height: 1.5;
   display: inline-block;
   text-decoration: none;
@@ -1095,7 +1096,7 @@ svg rect {
       height: 320px;
       margin-left: -160px; }
   .view__portfolio {
-    padding: 144px 12px 120px;
+    padding: 164px 12px 120px;
     min-height: 100vh;
     position: relative;
     overflow: hidden; }
@@ -1218,7 +1219,7 @@ svg rect {
       .view__portfolio .flower-pot.active {
         opacity: 1; }
     .view__portfolio .grid__terms {
-      margin-bottom: 20px; }
+      margin-bottom: 15px; }
   .view__contact {
     padding: 144px 12px 60px;
     min-height: 100vh;
@@ -1358,13 +1359,12 @@ svg rect {
     font-weight: 300; }
 
 .term {
-  border: 1px solid #403928;
-  background: rgba(233, 233, 219, 0.7);
+  background: rgba(101, 108, 76, 0.2);
   padding: 3px 12px;
   display: inline-block;
   vertical-align: top;
   font-size: .8rem;
-  color: #403928;
+  color: #383F26;
   margin-right: 4px;
   text-align: center;
   font-weight: 300; }
@@ -1724,3 +1724,19 @@ svg rect {
     padding: 24px 90px; }
     .view__about .text-block {
       max-width: 860px; } }
+.home-btn {
+  position: absolute;
+  bottom: 80px;
+  right: 40%;
+  opacity: 0;
+  -webkit-transition: 1s ease-in 1s all;
+  transition: 1s ease-in 1s all; }
+  .home-btn.active {
+    opacity: 1; }
+
+@media (max-width: 720px) {
+  .home-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 25%;
+    width: 200px; } }

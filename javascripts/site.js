@@ -248,6 +248,13 @@ whereMyDomAt(function() {
 		}, 1000)
 	}
 
+  if( document.querySelector( '.home-btn' ) ){
+    var el = document.querySelector( '.home-btn' );
+    setTimeout( function(){
+      el.classList.add('active');
+    }, 1000)
+  }
+
 	// Home Animations
 	if( document.querySelector( '.view__home' ) ){
 
@@ -256,6 +263,7 @@ whereMyDomAt(function() {
 			orb = document.querySelector( '.orb--big' ),
 			logo = document.querySelector( '.icon-logo' ),
 			slideIn = document.querySelector( '.slide-in' ),
+      homeb = document.querySelector( '.home-btn' ),
 			next = document.querySelector( '.next' );
 
 		function homeLoad(){
@@ -285,6 +293,10 @@ whereMyDomAt(function() {
 			setTimeout( function(){
 				activeToggle( next );
 			}, 1400 );
+
+      setTimeout( function(){
+        activeToggle( homeb );
+      }, 1400 );
 
 		}
 
