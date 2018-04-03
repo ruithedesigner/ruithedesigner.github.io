@@ -682,7 +682,7 @@ a {
   right: 0;
   width: 100%;
   text-align: center;
-  top: 60%;
+  top: 70%;
   content: attr(data-progress-text);
   font-family: "Pathway Gothic One", sans-serif;
   font-weight: 400;
@@ -1219,7 +1219,7 @@ svg rect {
       .view__portfolio .flower-pot.active {
         opacity: 1; }
     .view__portfolio .grid__terms {
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
   .view__contact {
     padding: 144px 12px 60px;
     min-height: 100vh;
@@ -1366,6 +1366,7 @@ svg rect {
   font-size: .8rem;
   color: #383F26;
   margin-right: 4px;
+  margin-bottom: 5px;
   text-align: center;
   font-weight: 300; }
 
@@ -1737,6 +1738,6 @@ svg rect {
 @media (max-width: 720px) {
   .home-btn {
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     right: 25%;
     width: 200px; } }
