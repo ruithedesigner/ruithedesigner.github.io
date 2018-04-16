@@ -135,80 +135,6 @@ whereMyDomAt(function() {
 
 	};
 
-	// Detect scroll direction
-	// var scrolled = false,
-	// 		scrollDir;
-
-	// function scrollDirection( e ){
-
-	// 	if ( e.wheelDelta > 0 || e.detail < 0 ) {
-
-	// 		scrollDir = "up";
-
-  //   } else {
-
-	// 		scrollDir = "down";
-
-  //   }
-
-	// }
-
-
-	// Class manager for sibling layout divs
-	// var views = document.querySelectorAll( '.view' );
-
-	// if( views.length > 0 ){
-
-	// 	// Set the first view to 'active', and all others to inactive
-	// 	views[0].classList.add( 'current' );
-
-	// 	for( var i = 1; i < views.length; i++ ){
-
-	// 		views[i].classList.add( 'inactive' );
-
-	// 	}
-
-	// }
-
-	// var scrollViews = debounce(function( e ) {
-
-	// 	scrollDirection( e );
-
-	// 	if( views.length > 1 && views[0].classList.contains( 'current' ) && scrollDir == "down" && scrolled === false && menuStatus === false ){
-
-	// 		var current = document.querySelector( '.view.current' );
-	// 		var next = document.querySelector( '.view.inactive' );
-
-	// 		current.classList.remove('current');
-	// 		current.classList.add('inactive');
-
-	// 		setTimeout( function(){
-	// 			next.classList.remove('inactive');
-	// 			next.classList.add('current');
-
-	// 			aboutLoad();
-	// 		}, 100 );
-
-	// 		scrolled = true;
-
-	// 	} // else if( views.length > 1 && views[1].classList.contains( 'current' ) && scrolled == "up" ){
-
-		// 	var current = document.querySelector( '.view.current' );
-		// 	var next = document.querySelector( '.view.inactive' );
-
-		// 	current.classList.remove('current');
-		// 	current.classList.add('inactive');
-
-		// 	setTimeout( function(){
-		// 		next.classList.remove('inactive');
-		// 		next.classList.add('current');
-		// 	}, 100 );
-
-		// }
-
-	// }, 50 );
-
-//  document.addEventListener( "wheel", scrollViews, false );
 
 	// Menu
 	var menuToggle = document.querySelector( '.hamburger' ),
@@ -376,36 +302,7 @@ whereMyDomAt(function() {
 		// boxRollovers( el, target );
 	}
 
-  // old orb floating effect
-// function boxRollovers( containerEl, targetEl ) {
-//
-// 		$selector = $( containerEl );
-// 		XAngle = 0;
-// 		YAngle = 0;
-// 		Z = 0;
-//
-// 		$selector.on("mousemove",function(e){
-// 			var $this = $(this);
-// 			var XRel = e.pageX - $this.offset().left;
-// 			var YRel = e.pageY - $this.offset().top;
-// 			var width = $this.width();
-//
-// 			YAngle = -(0.5 - (XRel / width)) * 10;
-// 			XAngle = (0.5 - (YRel / width)) * 10;
-// 			updateView($this.find( targetEl ));
-// 		});
-//
-// 		$selector.on("mouseleave",function(){
-// 			oLayer = $(this).find( targetEl );
-// 			oLayer.css({"transform":"perspective(525px) rotateX(0deg) rotateY(0deg)","transition":"all 1000ms ease-in 1s","-webkit-transition":"all 150ms ease-in 1s"});
-// 		});
-// 	}
-//
-// 	function updateView(oLayer)
-// 	{
-// 		oLayer.css({"transform":"perspective(525px) rotateX(" + XAngle + "deg) rotateY(" + YAngle + "deg)","transition":"none","-webkit-transition":"none"});
-// 		// oLayer.find("strong").css({"transform":"perspective(525px) translateZ(" + Z + "px) rotateX(" + (XAngle / 0.66) + "deg) rotateY(" + (YAngle / 0.66) + "deg)","transition":"none","-webkit-transition":"none"});
-// 	}
+
 
 
   var bodyEl = $('body'),
@@ -479,32 +376,6 @@ whereMyDomAt(function() {
 		}
 	}
 
-//   // contact page animation
-// if( document.querySelector( '.view__contact' ) ){
-//   // Init
-//   setTimeout( function(){
-//     portfolioLoad();
-//   }, 500);
-//
-//   function portfolioLoad(){
-//
-//     var portfolio = document.querySelector( '.view__contact' ),
-//         logo = portfolio.querySelector( '.icon-logo__dark' ),
-//         orbBig = portfolio.querySelector( '.orb--big' ),
-//         parrot = portfolio.querySelector( '.icon-parrot' ),
-//         sofa = portfolio.querySelector( '.icon-sofa' ),
-//         orbSmall = portfolio.querySelector( '.orb--small' ),
-//
-//     setTimeout( function(){ activeToggle( orbBig )}, 400);
-//     setTimeout( function(){ activeToggle( parrot )}, 800);
-//     setTimeout( function(){ activeToggle( sofa )}, 1000);
-//     setTimeout( function(){ activeToggle( orbSmall )}, 1400);
-//
-//
-//     setTimeout( function(){
-//       activeToggle( logo );
-//     }, 400);
-//   }
-// }
+
 
 });
