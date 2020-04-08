@@ -1741,3 +1741,12 @@ svg rect {
     bottom: 30px;
     right: 25%;
     width: 200px; } }
+.view__disney {
+  background-color: #ffffff !important;
+  overflow: scroll !important;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.disney_image {
+  width: 80%;
+  padding-bottom: 0px; }
